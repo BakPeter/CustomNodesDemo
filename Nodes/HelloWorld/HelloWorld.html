@@ -1,0 +1,33 @@
+<script type="text/javascript">
+  RED.nodes.registerType("HelloWorld", {
+    category: "Demo",
+    color: "#bcbcd5",
+    defaults: {
+      name: { value: "" },
+      topic: { value: "" },
+    },
+    inputs: 1,
+    outputs: 1,
+    icon: "edge.png",
+    label: function () {
+      return "Hello World " + this.name;
+    },
+  });
+</script>
+
+<script type="text/html" data-template-name="HelloWorld">
+  <div class="form-row">
+    <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+    <input type="text" id="node-input-name" placeholder="Name" />
+  </div>
+  <br />
+  <br />
+  <div class="form-row">
+    <label for="node-input-topic"><i class="fa fa-tag"></i> Topic</label>
+    <input type="text" id="node-input-topic" placeholder="Topic" />
+  </div>
+</script>
+
+<script type="text/html" data-help-name="HelloWorld">
+  <p>A simple node that adds "Hello World" string to input payload.</p>
+</script>

@@ -1,0 +1,14 @@
+{
+  "name": "node-red-contrib-demo",
+  "version": "1.0.0",
+  "description": "A Sample node for node-red",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "node-red": {
+    "nodes": {
+      "HellowWorld": "Nodes/HelloWorld/HelloWorld.js",
+      "Add": "Nodes/Add/Add.js"
+    }
+  }
+}

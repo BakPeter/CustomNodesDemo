@@ -1,0 +1,38 @@
+<script type="text/javascript">
+  RED.nodes.registerType("Add", {
+    category: "Demo",
+    color: "#b9daab",
+    defaults: {
+      name: { value: "" },
+      n1: { value: "" },
+      n2: { value: "" },
+    },
+    inputs: 1,
+    outputs: 1,
+    icon: "vertex.png",
+    label: function () {
+      return "Add " + this.name;
+    },
+  });
+</script>
+
+<script type="text/html" data-template-name="Add">
+  <div class="form-row">
+    <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+    <input type="text" id="node-input-name" placeholder="Name" />
+  </div>
+  <br />
+  <br />
+  <div class="form-row">
+    <label for="node-input-n1"><i class="fa fa-tag"></i> N1</label>
+    <input type="text" id="node-input-n1" placeholder="n1" />
+  </div>
+  <div class="form-row">
+    <label for="node-input-n2"><i class="fa fa-tag"></i> N2</label>
+    <input type="text" id="node-input-n2" placeholder="n2" />
+  </div>
+</script>
+
+<script type="text/html" data-help-name="Add">
+  <p>A simple node that adds two numbers.</p>
+</script>
